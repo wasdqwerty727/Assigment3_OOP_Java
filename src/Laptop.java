@@ -15,6 +15,6 @@ public class Laptop extends Device{
 
 
     public String toString(){
-        return "Type: " + super.getType() + " / " + "Price: " + super.getPrice() + "$ " + " / " + "Weight: " + super.getWeight() + " / " + "VideoCard: " + this.videoCard;
+        return "Type: " + super.getType() + " / " + "Price: " + super.getPrice() + "$ " + " / " + "Weight: " + super.getWeight() + " / " + "RAM: " + this.ram + " / " + "VideoCard: " + this.videoCard;
     }
 }
