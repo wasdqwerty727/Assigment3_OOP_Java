@@ -31,15 +31,15 @@ public class App {
 
             if(type==0){ // create laptop
                 int selectVideoCard = rand.nextInt(videoCardArr.length);
-                Laptop l1 = new Laptop(rand.nextInt(1000), rand.nextInt(10) , "Laptop", rand.nextInt(16), videoCardArr[selectVideoCard]);
+                Laptop l1 = new Laptop(rand.nextInt(1000) + 1, rand.nextInt(10) + 1, "Laptop", rand.nextInt(16) + 1, videoCardArr[selectVideoCard]);
                 devices.add(l1);
             }
             else if(type==1){ // create smartphone
-                Smartphone s1 = new Smartphone(rand.nextInt(500), rand.nextInt(5), "Smartphone", rand.nextInt(108), rand.nextBoolean());
+                Smartphone s1 = new Smartphone(rand.nextInt(500) + 1, rand.nextInt(5) + 1, "Smartphone", rand.nextInt(108) + 1, rand.nextBoolean());
                 devices.add(s1);
             }
             else{ // create tablet
-                Tablet t1 = new Tablet(rand.nextInt(700), rand.nextInt(7), "Tablet", rand.nextBoolean(), rand.nextInt(90));
+                Tablet t1 = new Tablet(rand.nextInt(700) + 1, rand.nextInt(7) + 1, "Tablet", rand.nextBoolean(), rand.nextInt(90) + 1);
                 devices.add(t1);
             }
         }
